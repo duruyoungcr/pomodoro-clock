@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro Clock</title>
+  </head>
+  <body>
+    <div class="con">
+      <div class="pomodoro">
+        <div class="title">
+          <h1>Pomodoro Clock</h1>
+        </div>
+        <div class="length">
+          <div class="break">
+            <div class="length-title">
+              <h2 id="break-label">Break Duration</h2>
+            </div>
+            <div class="length-timer">
+              <i class="fa fa-sort-asc fa-2x" id="break-increment"></i>
+            </div>
+            <span id="break-length">5</span>
+            <div class="length-timer">
+              <i class="fa fa-sort-desc fa-2x" id="break-decrement"></i>
+            </div>
+          </div>
+          <div class="session">
+            <div class="length-title">
+              <h2 id="session-label">Session Duration</h2>
+            </div>
+            <div class="length-timer">
+              <i class="fa fa-sort-asc fa-2x" id="session-increment"></i>
+            </div>
+            <span id="session-length">25</span>
+            <div class="length-timer">
+              <i class="fa fa-sort-desc fa-2x" id="session-decrement"></i>
+            </div>
+          </div>
+        </div>
+        <div class="countdown">
+          <div class="countdown-timer">
+            <div id="timer-label">session</div>
+            <div id="time-left">
+              <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+          </div>
+        </div>
+        <div class="timer-control">
+          <div class="pause-play">
+            <i class="fa fa-play fa-2x" id="start_stop"></i>
+          </div>
+          <i class="fa fa-refresh fa-2x" id="reset"></i>
+        </div>
+        <div class="footer">
+          <p>
+            Designed with <i class="fa fa-heart"></i> by
+            <a href="https://github.com/smartray" target="_blank">ray</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
